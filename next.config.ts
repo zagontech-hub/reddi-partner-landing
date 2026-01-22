@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Optimización para Docker - genera un bundle standalone mínimo
+  output: 'standalone',
 };
 
 export default nextConfig;
