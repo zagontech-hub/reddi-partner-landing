@@ -29,7 +29,7 @@ const rubik = Rubik({
 });
 
 export const metadata: Metadata = {
-  title: "Reddi - Partner Landing",
+  title: "Reddi",
   description: "Registra tu negocio en Reddi",
 };
 
