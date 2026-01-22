@@ -18,7 +18,7 @@ export default function Header() {
         </Link>
       </div>
 
-      {/* Navigation */}
+      {/* Navigation - Se mantiene oculto en móbiles (hidden lg:flex) */}
       <nav className="hidden lg:flex gap-12.5 items-center">
         {NAV_ITEMS.map((item) => (
           <Link
@@ -32,7 +32,8 @@ export default function Header() {
       </nav>
 
       {/* Botón Ingresar */}
-      <div className="absolute right-5 md:right-12.5 hidden sm:block">
+      {/* SE ELIMINÓ 'hidden sm:block' para que sea visible siempre */}
+      <div className="absolute right-5 md:right-12.5">
         <Link
           href="https://reddi-app.com/partner/login"
           className="flex flex-row justify-center items-center gap-2 w-41.5 h-11 bg-black rounded-xl hover:bg-gray-800 transition-colors px-5 py-[10px]"
